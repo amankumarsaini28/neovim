@@ -10,3 +10,9 @@ vim.keymap.set("n", "<leader>fb", builtin.buffers, {})
 vim.keymap.set("n", "<leader>fh", builtin.help_tags, {})
 vim.api.nvim_set_keymap("n", "<leader>gs", ":Neogit<CR>", { noremap = true, silent = true }) -- Open Neogit status
 vim.api.nvim_set_keymap("n", "<leader>ct", ":Telescope colorscheme<CR>", { noremap = true, silent = true }) -- Open Theme List
+vim.api.nvim_set_keymap(
+  "n",
+  "<leader>/",
+  "<cmd>lua require('telescope.builtin').live_grep({ cwd = vim.loop.cwd() })<CR>",
+  { noremap = true, silent = true }
+)
