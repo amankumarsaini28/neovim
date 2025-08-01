@@ -38,9 +38,6 @@ return {
       },
     },
   },
-  -- For typescript, LazyVim also includes extra specs
-  { import = "lazyvim.plugins.extras.lang.typescript" },
-
   {
     "hrsh7th/nvim-cmp",
     dependencies = {
