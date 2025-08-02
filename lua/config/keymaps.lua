@@ -10,6 +10,8 @@ vim.keymap.set("n", "<leader>fb", builtin.buffers, {})
 vim.keymap.set("n", "<leader>fh", builtin.help_tags, {})
 vim.api.nvim_set_keymap("n", "<leader>gs", ":Neogit<CR>", { noremap = true, silent = true }) -- Open Neogit status
 vim.api.nvim_set_keymap("n", "<leader>ct", ":Telescope colorscheme<CR>", { noremap = true, silent = true }) -- Open Theme List
+vim.keymap.set("n", "<leader>ai", ":Copilot panel", {})
+vim.keymap.set("n", "<leader>W", ":w<CR>", {})
 
 vim.api.nvim_set_keymap(
   "n",
